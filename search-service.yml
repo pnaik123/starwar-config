@@ -17,8 +17,8 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://discovery-server:8761/eureka/
+      defaultZone: http://starwar-discovery-server:8761/eureka/
 management:
   zipkin:
     tracing:
-      endpoint: http://tracing-server:9411/api/v2/spans
+      endpoint: http://starwar-tracing-server:9411/api/v2/spans
