@@ -14,10 +14,10 @@ spring:
       on-profile: docker
 server:
   port: 8081
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://starwar-discovery-server:8761/eureka/
+# eureka:
+#   client:
+#     serviceUrl:
+#       defaultZone: http://starwar-discovery-server:8761/eureka/
 management:
   zipkin:
     tracing:
