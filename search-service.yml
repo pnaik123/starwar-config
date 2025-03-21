@@ -19,6 +19,9 @@ server:
 #     serviceUrl:
 #       defaultZone: http://starwar-discovery-server:8761/eureka/
 management:
+  tracing:
+    sampling:
+      probability: 1.0  # Sample 100% of traces (adjust as needed)
   zipkin:
     tracing:
-      endpoint: http://starwar-tracing-server:9411/api/v2/spans
+      endpoint: http://zipkin:9411/api/v2/spans  # Use the Kubernetes Service name for Zipkin
